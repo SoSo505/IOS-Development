@@ -14,6 +14,7 @@ class Calculator {
         case constant(value: Double)
         case unary(function: (Double) -> Double)
         case binary(function: (Double, Double) -> Double)
+        case D
     }
     
     var map: [String : Operation] = [
@@ -38,6 +39,7 @@ class Calculator {
         },
         "AC" : .constant(value:0),
         "Rand" : .constant(value: Double.random(in: 1...100)),
+        "D" : .unary{$0},
     
     ]
         
@@ -51,6 +53,7 @@ class Calculator {
     func setOperand(number: Double) {
         result = number
     }
+    
     
     func executeOperation(symbol: String) {
         guard let operation = map[symbol] else {
@@ -78,6 +81,10 @@ class Calculator {
                 lastBinaryOperation = nil
                 reminder = 0
             }
+        case .D:
+                result = 0
+                reminder = 0
+                lastBinaryOperation = nil
+            }
         }
     }
-}

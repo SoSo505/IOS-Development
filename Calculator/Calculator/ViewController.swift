@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     let model = Calculator()
     
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
@@ -47,25 +48,28 @@ class ViewController: UIViewController {
         
         if operation == "=" {
             resultLabel.text = "\(model.result)"
-        }
+        }else if
         
-        if operation == "x!" {
+         operation == "x!" {
             resultLabel.text = "\(model.result)"
-        }
+        }else if
         
-        if operation == "pi" {
+         operation == "pi" {
             resultLabel.text = "\(model.result)"
-        }
+        }else if
         
-        if operation == "sqrt" {
+         operation == "sqrt" {
                    resultLabel.text = "\(model.result)"
-        }
+        }else if
         
-        if operation == "Rand" {
+         operation == "Rand" {
                    resultLabel.text = "\(model.result)"
-        }
-        if operation == "AC" {
+        }else if
+         operation == "AC" {
                           resultLabel.text = "\(model.result)"
-               }
+               }else if
+         operation == "D" {
+                   resultLabel.text = "\(model.result)"
+        }
     }
 }
