@@ -21,10 +21,10 @@ class ViewController: UIViewController {
               let selectVC = storyboard.instantiateViewController(identifier: "select") as? SelectColorViewController
           else { return }
           
-          selectVC.onSelect = { [weak self] color in
-              guard let self = self else { return }
+          selectVC.onSelect = { color in
+             
               
-              sender.backgroundColor = color
+            sender.backgroundColor = color
           }
           
           self.present(selectVC, animated: true)

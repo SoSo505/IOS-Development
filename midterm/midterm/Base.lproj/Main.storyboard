@@ -21,7 +21,6 @@
                                 <state key="normal" title="butt"/>
                                 <connections>
                                     <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAp-3C-zKV"/>
-                                    <segue destination="VWf-3q-R32" kind="presentation" id="McG-JY-JJd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14v-gi-gHb">
@@ -30,7 +29,6 @@
                                 <state key="normal" title="butt"/>
                                 <connections>
                                     <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGy-2v-rZi"/>
-                                    <segue destination="VWf-3q-R32" kind="presentation" id="e5H-9l-PaC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7M-qY-XZ8">
@@ -39,7 +37,6 @@
                                 <state key="normal" title="butt"/>
                                 <connections>
                                     <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKy-Mn-fK7"/>
-                                    <segue destination="VWf-3q-R32" kind="presentation" id="X5e-L4-G94"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnE-G2-M39">
@@ -48,7 +45,6 @@
                                 <state key="normal" title="butt"/>
                                 <connections>
                                     <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCY-1g-nUh"/>
-                                    <segue destination="VWf-3q-R32" kind="presentation" id="ARZ-4B-A2A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,22 +81,21 @@
             <objects>
                 <viewController storyboardIdentifier="select" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VWf-3q-R32" customClass="SelectColorViewController" customModule="midterm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ead-3v-W4g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POE-rO-yVg">
-                                <rect key="frame" x="20" y="69" width="374" height="343"/>
+                                <rect key="frame" x="20" y="113" width="374" height="480"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="red">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="colorSelected:" destination="Mxl-FH-lRh" eventType="touchUpInside" id="TLX-hz-Cnr"/>
                                     <action selector="colorSelected:" destination="VWf-3q-R32" eventType="touchUpInside" id="bQT-al-q03"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JN-1Y-o5u">
-                                <rect key="frame" x="20" y="430" width="374" height="389"/>
+                                <rect key="frame" x="20" y="611" width="374" height="545"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="blue">
                                     <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,12 +123,8 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpz-YB-ZSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Mxl-FH-lRh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="992.75362318840587" y="128.57142857142856"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="X5e-L4-G94"/>
-    </inferredMetricsTieBreakers>
 </document>
