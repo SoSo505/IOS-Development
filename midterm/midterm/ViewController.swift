@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func selectColor(_ sender: Any) {
+    @IBAction func selectColor(_ sender: UIButton) {
           let storyboard = UIStoryboard(name: "Main", bundle: nil)
           guard
               let selectVC = storyboard.instantiateViewController(identifier: "select") as? SelectColorViewController
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
           selectVC.onSelect = { [weak self] color in
               guard let self = self else { return }
               
-              self.view.backgroundColor = color
+              sender.backgroundColor = color
           }
           
           self.present(selectVC, animated: true)
